@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Title from './Title';
 import Image from './Image';
 
-export default class RecipeCard extends Component {
+class fooditems extends React.Component {
 	render(){
 		return(
           <div>
@@ -27,3 +27,5 @@ const foodstyle = styled.a`
 	color: blue;
 	margin: 0 20px 10px;
 `;
+
+export default fooditems;
