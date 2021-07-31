@@ -22,9 +22,9 @@ class App extends React.Component {
   render() {
     var data = this.state.fooditem;
     return (
-      <appstyles className="App">
+      <div className="App">
         <fooditems meals={data} />
-      </appstyles>
+      </div>
     );
   }
 }
