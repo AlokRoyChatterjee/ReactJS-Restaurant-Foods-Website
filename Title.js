@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-export default class Title extends Component {
+class foodname extends Component {
 	render(){
-		return(
-          <Header>{this.props.title}</Header>
+		return(<Header>{this.props.title}</Header>
 		)
 	}
 }
+export default foodname;
 
-const Header = styled.h1`
-    text-align: center;
-    font-size: 30px;
-`;
