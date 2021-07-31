@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import fooditems from './fooditems.js';
+import fooditems from './fooditems';
 import './App.css';
 class App extends React.Component {
   constructor(props) {
