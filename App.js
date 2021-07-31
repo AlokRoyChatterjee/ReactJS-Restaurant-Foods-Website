@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import fooditems from './components/RecipeCard';
+import fooditems from './fooditems.js';
 import './App.css';
 class App extends React.Component {
   constructor(props) {
@@ -20,10 +20,10 @@ class App extends React.Component {
       .catch(err => {console.log(err);});
   }
   render() {
-    var data = this.state.fooditem;
+    var foodinfo = this.state.fooditem;
     return (
       <div className="App">
-        <fooditems meals={data} />
+        <fooditems meals={foodinfo} />
       </div>
     );
   }
