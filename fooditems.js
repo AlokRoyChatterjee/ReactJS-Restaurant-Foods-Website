@@ -1,31 +1,24 @@
 import React from 'react';
-import styled from 'styled-components';
-import Title from './Title';
-import Image from './Image';
+import foodname from './foodname';
+import foodimage from './foodimage';
 
 class fooditems extends React.Component {
 	render(){
 		return(
           <div>
-         	{this.props.meals.map((item, index) => {
+         	{this.props.meals.map((fooditem, index) => {
          		return ( 
-         			<foodstyle 
+         			<div> 
          				key={index} 
-         				href={item.strSource}>
-         				<Image source={item.strMealThumb} text={item.strMeal} />
-         				<Title title={item.strMeal} />
-         			</foodstyle> 
+         				href={fooditem.strSource}>
+         				<foodimage source={fooditem.strMealThumb} text={fooditem.strMeal} />
+         				<foodname foodname={fooditem.strMeal} />
+         			</div> 
          		)
          	})}
           </div>
 		)
 	}
 }
-
-const foodstyle = styled.a`
-	width: 120px;
-	color: blue;
-	margin: 0 20px 10px;
-`;
 
 export default fooditems;
