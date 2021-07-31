@@ -2,7 +2,7 @@ import React from 'react';
 
 class foodname extends React.Component {
 	render(){
-		return(<Header>{this.props.title}</Header>
+		return(<h1>{this.props.title}</h1>
 		)
 	}
 }
